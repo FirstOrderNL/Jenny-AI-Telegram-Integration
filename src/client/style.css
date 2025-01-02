@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chat-widget {
+  font-family: system-ui, -apple-system, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.message-bubble {
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+#toggle-chat, #close-chat, #clear-chat {
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle-chat:hover, #close-chat:hover, #clear-chat:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+  #chat-widget {
+    width: 100%;
+    max-width: 100%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  }
+}

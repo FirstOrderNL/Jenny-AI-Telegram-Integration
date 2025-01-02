@@ -1,0 +1,35 @@
+.message {
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 12px;
+    max-width: 80%;
+    word-break: break-word;
+}
+
+.jenny-message {
+    background: white;
+    margin-right: auto;
+}
+
+.user-message {
+    background: #DCF8C6;
+    margin-left: auto;
+}
+
+#jenny-ai-chat-messages {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+#jenny-ai-chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+#jenny-ai-chat-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#jenny-ai-chat-messages::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}

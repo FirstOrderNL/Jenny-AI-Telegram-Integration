@@ -1,0 +1,142 @@
+.jenny-ai-chat-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999;
+}
+
+.jenny-toggle-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.jenny-toggle-button:hover {
+    transform: scale(1.1);
+}
+
+.jenny-ai-chat-widget {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 350px;
+    height: 450px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.jenny-ai-chat-widget.active {
+    display: flex;
+}
+
+.jenny-chat-actions {
+    background: #075E54;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.jenny-clear-chat,
+.jenny-close-button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+}
+
+.jenny-clear-chat:hover,
+.jenny-close-button:hover {
+    opacity: 0.8;
+}
+
+#jenny-ai-chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    background: #E5DDD5;
+}
+
+.jenny-ai-chat-input {
+    padding: 12px;
+    background: white;
+    border-top: 1px solid #E5E5E5;
+}
+
+#jenny-ai-chat-form {
+    display: flex;
+    gap: 8px;
+}
+
+#jenny-ai-chat-message {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #E5E5E5;
+    border-radius: 24px;
+    outline: none;
+}
+
+#jenny-ai-chat-form button {
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#jenny-ai-chat-form button:hover {
+    background: #128C7E;
+}
+
+/* Message styles from previous update */
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin: 8px;
+    gap: 8px;
+}
+
+.user-message {
+    flex-direction: row-reverse;
+}
+
+.jenny-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.message-text {
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 70%;
+    word-break: break-word;
+}
+
+.jenny-message .message-text {
+    background: #f0f0f0;
+}
+
+.user-message .message-text {
+    background: #25D366;
+    color: white;
+}

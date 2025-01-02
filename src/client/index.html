@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenny AI Chat</title>
+    <script type="module" src="/src/client/main.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Toggle Button -->
+    <button 
+        id="toggle-chat"
+        class="fixed bottom-4 right-4 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-700 transition-colors z-50"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+        </svg>
+    </button>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget" class="fixed bottom-4 right-4 w-96 transition-all duration-300 ease-in-out z-40">
+        <div class="bg-white rounded-lg shadow-lg">
+            <div class="flex justify-end items-center p-2 space-x-2">
+                <button 
+                    id="clear-chat"
+                    class="text-gray-500 hover:text-gray-700 transition-colors px-2"
+                    aria-label="Clear chat"
+                >
+                    Clear
+                </button>
+                <button 
+                    id="close-chat"
+                    class="text-gray-500 hover:text-gray-700 transition-colors"
+                    aria-label="Close chat"
+                >
+                    ×
+                </button>
+            </div>
+            <div id="chat-messages" class="h-96 overflow-y-auto p-4 space-y-4"></div>
+            <div class="p-4 border-t">
+                <form id="chat-form" class="flex space-x-2">
+                    <input 
+                        type="text" 
+                        id="message-input"
+                        class="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Ask about crypto prices or news..."
+                    >
+                    <button 
+                        type="submit"
+                        class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+                    >
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

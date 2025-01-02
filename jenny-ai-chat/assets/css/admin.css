@@ -1,0 +1,59 @@
+.jenny-ai-chat-settings {
+    max-width: 800px;
+    margin: 20px 0;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.jenny-ai-chat-settings h1 {
+    color: #1e1e1e;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.jenny-avatar-preview {
+    margin-bottom: 15px;
+}
+
+.jenny-avatar-preview img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e5e7eb;
+    background: #f3f4f6;
+}
+
+.jenny-ai-chat-settings .form-table {
+    margin-top: 20px;
+}
+
+.jenny-ai-chat-settings .form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+}
+
+.jenny-ai-chat-settings .regular-text {
+    width: 400px;
+}
+
+.jenny-ai-chat-shortcode {
+    background: #f0f0f1;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.jenny-ai-chat-shortcode code {
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+#upload-avatar-btn {
+    margin-right: 10px;
+}
